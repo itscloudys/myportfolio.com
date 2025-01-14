@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Klaudia Swierzewska, showcasing projects, experience, and skills in frontend development.">
+    <meta name="keywords" content="Frontend Developer, Portfolio, Klaudia, Web Development, Projects">
+    <title>Klaudia's Portfolo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <div class="shell">
+        <header>
+            <div class="img-container">
+                <img src="home section.jpg" alt="Home section image">
+            </div>
+        </header>
+        
+    </div>
+
+
+
+
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio</div>
+        <div class="dark-mode-toggle" aria-label="Toggle dark mode" onclick="toggleDarkMode()">
+          <span>🌙</span>
+      </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Klaudia Swierzewska</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="wrapper">
+          <img src="circle_frame_image.png" id="profilepic" alt="Klaudia profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h2 class="title">Klaudia Swierzewska</h2>
+          <h1 id="h1" data-text="Frontend Developer">Frontend Developer</h1>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('curriculum.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/klaudia-swierzewska/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/itscloudys'"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p><br><br><br><br><br>
+        <div class="decorationaltext"><h1 class="textdecor" data-text="About Me" id="aboutdecor">About Me</h1></div>
+
+        <br><br><br><br><br><br><br><br>
+        <div class="section-container">
+          
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>6+ MONTHS <br />Frontend Development <br /> Freelance Web Developer <br /> Freelance Web Designer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Harvard CS50: Introduction To Computer Science<br />Front-End Engineer Career - CodeAcademy <br /> AI Essentials - Google <br /> Responsive Web Design - Free Code Camp <br/> Advanced Web Design - CodeAcademy <br/> 
+                Front End CodeAcademy <br/> Introduction To Javascript - SoloLearn <br/> Javascript Intermediate - SoloLearn <br/> Javascript-  Free Code Camp <br/> Front End - Free Code Camp <br/> Data Visualisation - Free Code Camp <br/>
+              Relational Database - Free Code Camp <br/> </p>
+              </div>
+            </div>
+            <div class="text-container" id="aboutp">
+              <p>
+                I am a self-taught front-end developer with a strong foundation in building responsive, user-friendly, and visually appealing web experiences. Through extensive self-study, I have completed certifications from renowned institutions, including Harvard, Google, FreeCodeCamp, and Codecademy, covering key areas such as computer science fundamentals, JavaScript, and advanced web design.
+
+My technical expertise includes HTML, CSS, JavaScript, React, TypeScript, and TailwindCSS, complemented by a solid understanding of UX/UI principles and design tools like Figma. I am driven by a passion for continuous learning and innovation, consistently striving to create high-quality solutions that seamlessly blend aesthetics with functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p><br><br><br><br>
+        <div class="decorationaltext"><h1 class="textdecor" data-text="Experience">Experience</h1></div>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Javascript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TailwindCss</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Advanced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>UX/UI</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Design</h3>
+                    <p>Intermediate</p>
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="language-container">
+          <h2 class="language-sub-title">Languages</h2>
+              <div class="language-article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>English</h3>
+                    <p>Fluent</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Italian</h3>
+                    <p>Fluent</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Polish</h3>
+                    <p>Fluent</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Spanish</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Chinese</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                </div>
+
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p><br/><br><br><br>
+        <div class="decorationaltext"><h1 class="textdecor" data-text="Projects">Projects</h1></div>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/majestea resort.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Majestea Resort Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/Majestea-Resort/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/speakeasy.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">The Velvet Flask Speakeasy Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/the-velvet-flask/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/tennis club.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Tennis Club</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/Tennis-Club/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/the podcast.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">The Podcast Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/the-podcast/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/reaction speed test.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Reaction Speed Test Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/reaction-speed-test/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/medical student resources.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Medical Student Resources Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/medical-student-resources/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/weather app.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Weather App Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/weather-app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="projects/to do list.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">To Do List Website</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/itscloudys'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://itscloudys.github.io/to-do-list-app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="projects/my closet.png"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Fashion Closet Website</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/itscloudys'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://itscloudys.github.io/my-closet/'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="projects/ecommerce website.png"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Alix Ecommerce Website</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/itscloudys'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://itscloudys.github.io/A-E-commerce-Store/'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="projects/marinato coffee company.png"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Marinato Caffe' Co. Website</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/itscloudys'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://itscloudys.github.io/Marinato-Caffe-Co./'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="experience-details-container">
+                  <div class="about-containers">
+                    <div class="details-container color-container">
+                      <div class="article-container">
+                        <img
+                          src="projects/digital art gallery.png"
+                          alt="Project 1"
+                          class="project-img"
+                        />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Digital Art Gallery Website</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/itscloudys'"
+                        >
+                          Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://itscloudys.github.io/art-gallery/'"
+                        >
+                          Live Demo
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                      <div class="article-container">
+                        <img
+                          src="projects/image slider.jpg"
+                          alt="Project 1"
+                          class="project-img"
+                        />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Egypt Image Slider Website</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/itscloudys'"
+                        >
+                          Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://itscloudys.github.io/Egypt-Image-Slider/'"
+                        >
+                          Live Demo
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                      <div class="article-container">
+                        <img
+                          src="projects/magnifying glass effect.png"
+                          alt="Project 1"
+                          class="project-img"
+                        />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Magnifying Glass Effect Website</h2>
+                      <div class="btn-container">
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/itscloudys'"
+                        >
+                          Github
+                        </button>
+                        <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://itscloudys.github.io/magnifying-glass-effect/'"
+                        >
+                          Live Demo
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+
+
+       <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+        <div class="article-container">
+        <img
+               src="projects/candle website.png"
+                              alt="Project 1"
+                              class="project-img"
+                            />
+                          </div>
+                          <h2 class="experience-sub-title project-title">Sassy Scents Homemade Candles Website</h2>
+                          <div class="btn-container">
+                            <button
+                              class="btn btn-color-2 project-btn"
+                              onclick="location.href='https://github.com/itscloudys'"
+                            >
+                              Github
+                            </button>
+                            <button
+                              class="btn btn-color-2 project-btn"
+                              onclick="location.href='https://itscloudys.github.io/Sassy-Scents/'"
+                            >
+                              Live Demo
+                            </button>
+                          </div>
+                        </div>
+
+                        
+                            <div class="details-container color-container">
+                              <div class="article-container">
+                                <img
+                                  src="projects/skincare website.png"
+                                  alt="Project 1"
+                                  class="project-img"
+                                />
+                              </div>
+                              <h2 class="experience-sub-title project-title">Skincare Website</h2>
+                              <div class="btn-container">
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://github.com/itscloudys'"
+                                >
+                                  Github
+                                </button>
+                                <button
+                                  class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://itscloudys.github.io/skin-by-kloudy/'"
+                                >
+                                  Live Demo
+                                </button>
+                              </div>
+                            </div>
+
+           
+                                <div class="details-container color-container">
+                                  <div class="article-container">
+                                    <img
+                                      src="projects/calculator.png"
+                                      alt="Project 1"
+                                      class="project-img"
+                                    />
+                                  </div>
+                                  <h2 class="experience-sub-title project-title">Calculator</h2>
+                                  <div class="btn-container">
+                                    <button
+                                      class="btn btn-color-2 project-btn"
+                                      onclick="location.href='https://github.com/itscloudys'"
+                                    >
+                                      Github
+                                    </button>
+                                    <button
+                                      class="btn btn-color-2 project-btn"
+                                      onclick="location.href='https://itscloudys.github.io/calculator-javascript/'"
+                                    >
+                                      Live Demo
+                                    </button>
+                                  </div>
+                                </div>
+                                </div>
+                                </div>
+
+
+                                <div class="experience-details-container">
+                                  <div class="about-containers">
+                                    <div class="details-container color-container">
+                                      <div class="article-container">
+                                        <img
+                                          src="projects/blossom boulevard.png"
+                                          alt="Project 1"
+                                          class="project-img"
+                                        />
+                                      </div>
+                                      <h2 class="experience-sub-title project-title">Blossom Boulevard Flowers Website</h2>
+                                      <div class="btn-container">
+                                        <button
+                                          class="btn btn-color-2 project-btn"
+                                          onclick="location.href='https://github.com/itscloudys'"
+                                        >
+                                          Github
+                                        </button>
+                                        <button
+                                          class="btn btn-color-2 project-btn"
+                                          onclick="location.href='https://itscloudys.github.io/blossomboulevard.com/'"
+                                        >
+                                          Live Demo
+                                        </button>
+                                      </div>
+                                    </div>
+
+                                    <div class="details-container color-container">
+                                          <div class="article-container">
+                                            <img
+                                              src="projects/dolce far niente.png"
+                                              alt="Project 1"
+                                              class="project-img"
+                                            />
+                                          </div>
+                                          <h2 class="experience-sub-title project-title">Dolce Far Niente Italian Restaurant Website</h2>
+                                          <div class="btn-container">
+                                            <button
+                                              class="btn btn-color-2 project-btn"
+                                              onclick="location.href='https://github.com/itscloudys'"
+                                            >
+                                              Github
+                                            </button>
+                                            <button
+                                              class="btn btn-color-2 project-btn"
+                                              onclick="location.href='https://itscloudys.github.io/dolcefarniente.com/'"
+                                            >
+                                              Live Demo
+                                            </button>
+                                          </div>
+                                        </div>
+                                        </div>
+                                        </div>
+    
+
+
+
+
+
+
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">klaudia.sww@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/klaudia-swierzewska/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Klaudia Swierzewska. All Rights Reserved.</p>
+      </footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
